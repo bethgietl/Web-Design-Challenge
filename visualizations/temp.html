@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Visualization Dashboard</title>
+    <title>Web Visualization Dashboard (Latitude)</title>
 
     <link rel="stylesheet" href="../assets/CSS/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="../assets/CSS/styles.css" media="screen">
@@ -15,10 +15,10 @@
 
   <body>
     <!--create navbar-->
-    <nav class="navbar navbar-default">
+    <nav class="navbar-default">
       <div class="container-fluid navbar-custom">
 
-        <!-- Brand and toggle get grouped for better mobile display -->
+        <!--navbar toggle and collapse-->
         <div class="row">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -32,11 +32,11 @@
             </div>
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
+          <!--create pages and navbar headers: Plots (with dropdown option pages: Max temp, humdity, cloud, wind), Comparison, Data-->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                  <li><a href="temp.html">Max Temperature</a></li>
                   <li><a href="humidity.html">Humidity</a></li>
@@ -52,7 +52,7 @@
       </div>
     </nav>
     
-    <!-- Start of container -->
+   
     <div class="container">
       <section class="row">
         <div class="col-md-8">
@@ -65,7 +65,7 @@
         </div>
         <div class="col-md-4">
 
-          <!-- Start of Visualizations imageNav Area -->
+          <!--create visulaizations section on max temp page with links to the plots pages-->
           <section id="imageNav-area">
             <div class="imageNav-content">
               <h2 class="imageNav-header">Visualizations</h2>
@@ -78,27 +78,12 @@
               </div>
             </div>
           </section>
-          <!-- End of the Visualizations imageNav Area -->
-
+          
         </div>
       </section>
     </div>
-    <!-- End of container -->
 
-    <!-- Start of footer -->
-    <footer class="footer navbar-fixed-bottom">
-      <div class="two-toned-footer-color"></div>
-      <p class="text-muted text-muted-footer text-center">
-        &copy; Copyright Coding Bootcamp 2017
-      </p>
-    </footer>
-    <!-- End of footer -->
-
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
   </body>
 
 </html>
